@@ -1,8 +1,14 @@
-//Create a react app from scratch.
-//It should display 2 paragraph HTML elements.
-//The paragraphs should say:
-//Created by YOURNAME.
-//Copyright CURRENTYEAR.
-//E.g.
-//Created by Sachin.
-//Copyright 2021.
+import React from "react";
+import ReactDOM from "react-dom";
+
+var name = "Sachin T K";
+var date = new Date();
+var currentyear = date.getFullYear();
+
+ReactDOM.render(
+  <div>
+    <p>Created by {name} </p>
+    <p>Copyright {currentyear} </p>
+  </div>,
+  document.getElementById("root")
+);
